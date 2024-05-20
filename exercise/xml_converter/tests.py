@@ -7,6 +7,8 @@ TEST_DIR = Path(__file__).parent / Path('test_files')
 
 
 class XMLConversionTestCase(TestCase):
+    maxDiff = None
+
     def setUp(self):
         self.client = Client()
 
